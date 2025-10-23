@@ -4,39 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome for Footer Socials -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pap0oB5+1cUq+7t6k6nYt+1JuRk5VQZk7h+1t7I1J8Ld4l5Fh6hNj5KcF7b9U0CZ9v5o5f5vD7G5hI8FJ/4c1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./src/css/styles.css">
-  <title>Contact</title>
+
+  <title>Contact Us | ALZA HMZA</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
-  <!-- navbar1 -->
-  <!-- ====== Minimal Navbar (Like Kross Kulture Style) ====== -->
-  <!-- ====== Minimal Navbar (Like Kross Kulture Style) ====== -->
+  <!-- ====== Navbar ====== -->
   <nav class="navbar bg-white border-bottom py-3">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
       <!-- Logo -->
       <a class="navbar-brand fw-bold mx-3 text-center" style="font-family: 'Times New Roman', serif; 
-          letter-spacing: 4px; 
-          font-size: 32px; 
-          color: #000;">
+          letter-spacing: 4px; font-size: 32px; color: #000;">
         ALZA&nbsp;HMZA
       </a>
-
 
       <!-- Search Bar -->
       <form class="d-flex mx-auto position-relative" style="width: 40%;" role="search">
         <input class="form-control border rounded px-4" type="search" placeholder="Search for products"
-          aria-label="Search" style="border-radius: 8px;"> <!-- Soft rounded corners -->
+          aria-label="Search" style="border-radius: 8px;">
         <button class="btn position-absolute border-0 bg-transparent" type="submit"
           style="right: 10px; top: 50%; transform: translateY(-50%);">
           <i class="bi bi-search"></i>
@@ -45,7 +50,7 @@
 
       <!-- Icons -->
       <div class="d-flex align-items-center me-3">
-        <a href="#" class="text-dark me-3 fs-5"><i class="bi bi-person"></i></a>
+        <a href="./../signin/signup.html" class="text-dark me-3 fs-5"><i class="bi bi-person"></i></a>
         <a href="#" class="text-dark fs-5 position-relative">
           <i class="bi bi-bag"></i>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
@@ -55,48 +60,22 @@
     </div>
   </nav>
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- ====== Secondary Navbar (Category Menu) ====== -->
+  <!-- ====== Secondary Navbar ====== -->
   <nav class="navbar navbar-expand-lg bg-white border-top border-bottom py-2">
     <div class="container justify-content-center">
-
       <ul class="navbar-nav text-uppercase fw-semibold" style="font-size: 13px; letter-spacing: 1px;">
-        <li class="nav-item mx-3">
-          <a class="nav-link text-danger" href="../../../index.html">Home</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="#">New In</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="#">Rozmara Winter Vol. I</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="../about/about.html">About</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="#">Luxury Pret</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="#">Rozmara RTW</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="#">Kids</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-dark" href="./src/pages/contact/contact.html">Contacts</a>
-        </li>
+        <li class="nav-item mx-3"><a class="nav-link text-danger" href="../../../index.html">Home</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">New In</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Rozmara Winter Vol. I</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="../about/about.html">About</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Luxury Pret</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Rozmara RTW</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Kids</a></li>
+        <li class="nav-item mx-3"><a class="nav-link text-dark" href="./contact.html">Contact</a></li>
       </ul>
-
     </div>
   </nav>
 
-  <!-- Optional hover style -->
   <style>
     .nav-link {
       transition: color 0.2s ease;
@@ -104,93 +83,134 @@
 
     .nav-link:hover {
       color: #a00 !important;
-      /* Dark red hover */
     }
   </style>
 
+  <!-- ====== Hero Section ====== -->
+  <section class="bg-gray-100 py-20 text-center">
+    <h1 class="text-5xl font-bold mb-4 text-gray-900">Get in Touch with our brand </h1>
+    <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+      Have questions, feedback, or want to collaborate? We’re here to help. Reach out to us through the form below or
+      explore our contact options.
+    </p>
+  </section>
 
+  <!-- ====== Contact Form ====== -->
+  <section class="py-16">
+    <div class="bg-white shadow-xl rounded-3xl p-12 border border-gray-200 max-w-lg mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-gray-900 border-b pb-3 border-gray-300 text-center">Contact Us</h3>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+      <form action="https://formspree.io/f/myznqzpg" method="POST" class="space-y-6">
+        <label class="block text-gray-800 font-semibold text-lg">
+          Your Name:
+          <input type="text" name="name" required
+            class="mt-3 w-full border border-gray-300 rounded-2xl px-5 py-3 text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-gray-500 transition">
+        </label>
 
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-12">Contact Us</h2>
+        <label class="block text-gray-800 font-semibold text-lg">
+          Your Email:
+          <input type="email" name="email" required
+            class="mt-3 w-full border border-gray-300 rounded-2xl px-5 py-3 text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-gray-500 transition">
+        </label>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <label class="block text-gray-800 font-semibold text-lg">
+          Subject:
+          <input type="text" name="subject" required
+            class="mt-3 w-full border border-gray-300 rounded-2xl px-5 py-3 text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-gray-500 transition">
+        </label>
 
-      <!-- 📩 Contact Form -->
-      <div class="bg-white shadow-lg rounded-2xl p-8 border border-gray-100">
-        <h3 class="text-2xl font-semibold mb-6 text-gray-900">Send Us a Message</h3>
+        <label class="block text-gray-800 font-semibold text-lg">
+          Your Message:
+          <textarea name="message" required rows="6"
+            class="mt-3 w-full border border-gray-300 rounded-2xl px-5 py-3 text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-gray-500 transition resize-none"></textarea>
+        </label>
 
-        <form action="https://formspree.io/f/myznqzpg" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-        </form>
-      </div>
-
-      <!-- 💬 Chat Section -->
-      <div class="bg-gray-50 shadow-inner rounded-2xl p-8 flex flex-col h-[28rem]">
-        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Chat with Us</h3>
-
-        <div class="flex-1 overflow-y-auto space-y-4 mb-4">
-          <!-- Incoming Message -->
-          <div class="flex items-start space-x-3">
-            <div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-2xl rounded-bl-none max-w-xs">
-              Hi there! 👋 How can we help you today?
-            </div>
-          </div>
-
-          <!-- Outgoing Message -->
-          <div class="flex items-start justify-end space-x-3">
-            <div class="bg-black text-white px-4 py-2 rounded-2xl rounded-br-none max-w-xs">
-              I want to know about new arrivals.
-            </div>
-          </div>
-        </div>
-
-        <!-- Chat Input -->
-        <div class="flex items-center border-t pt-3">
-          <input type="text" placeholder="Type your message..."
-            class="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black">
-          <button class="ml-3 bg-black text-white rounded-full px-4 py-2 font-medium hover:bg-gray-800 transition">
-            Send
-          </button>
-        </div>
-      </div>
-
+        <button type="submit"
+          class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 rounded-2xl transition shadow-lg hover:shadow-xl text-lg">
+          Send Message
+        </button>
+      </form>
     </div>
+  </section>
 
-    <!-- 🌍 Contact Info -->
-    <div class="text-center mt-16">
-      <p class="text-gray-700 text-lg">📍 123 Fashion Street, Lahore, Pakistan</p>
-      <p class="text-gray-700 text-lg">📞 +92 300 1234567 | ✉️ info@alzafashion.com</p>
-      <div class="flex justify-center space-x-6 mt-4 text-2xl text-gray-600">
-        <a href="#" class="hover:text-black"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="hover:text-black"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="hover:text-black"><i class="bi bi-whatsapp"></i></a>
+  <!-- ====== Office Locations / Map ====== -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Office Locations</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-900">Lahore Office</h3>
+        <p class="text-gray-600 mb-4">123 Fashion Street, Lahore, Pakistan</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.874674646476!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905b0c9d8321f%3A0x507e21c1b71a86b8!2sLahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-900">Karachi Office</h3>
+        <p class="text-gray-600 mb-4">45 Style Avenue, Karachi, Pakistan</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.874674646476!2d67.0011!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ff88e3b0b1f%3A0x507e21c1b71a86b8!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000001!5m2!1sen!2s"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- Bootstrap Icons (for social) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- ====== FAQ Section ====== -->
+  <section class="bg-gray-50 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <div class="max-w-4xl mx-auto space-y-4">
+      <details class="p-4 border rounded-xl">
+        <summary class="font-semibold text-gray-900 cursor-pointer">How can I track my order?</summary>
+        <p class="mt-2 text-gray-600">You can track your order using the tracking link sent to your email after purchase.</p>
+      </details>
+      <details class="p-4 border rounded-xl">
+        <summary class="font-semibold text-gray-900 cursor-pointer">Do you offer international shipping?</summary>
+        <p class="mt-2 text-gray-600">Yes, we ship to select international locations. Contact us for more details.</p>
+      </details>
+      <details class="p-4 border rounded-xl">
+        <summary class="font-semibold text-gray-900 cursor-pointer">What payment methods are accepted?</summary>
+        <p class="mt-2 text-gray-600">We accept all major credit/debit cards, PayPal, and cash on delivery for local orders.</p>
+      </details>
+    </div>
+  </section>
 
+  <!-- ====== Newsletter Signup ====== -->
+  <section class="bg-gray-100 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4">Subscribe for Updates</h2>
+    <p class="text-gray-700 mb-6">Get the latest collections, offers, and fashion tips straight to your inbox.</p>
+    <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+      <input type="email" placeholder="Enter your email"
+        class="flex-1 px-4 py-3 rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500">
+      <button type="submit"
+        class="px-6 py-3 rounded-2xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">
+        Subscribe
+      </button>
+    </form>
+  </section>
 
+  <!-- ====== Testimonials ====== -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <p class="text-gray-600 mb-4">“Absolutely love the collection! The quality and design are impeccable.”</p>
+        <h3 class="font-semibold text-gray-900">— Sana Ali</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <p class="text-gray-600 mb-4">“Great customer service and fast delivery. Highly recommend ALZA HMZA!”</p>
+        <h3 class="font-semibold text-gray-900">— Hina Khan</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <p class="text-gray-600 mb-4">“Stylish and elegant pieces. I always get compliments when I wear them.”</p>
+        <h3 class="font-semibold text-gray-900">— Zara Ahmed</h3>
+      </div>
+    </div>
+  </section>
 
-  <!-- ====== Footer (Full Width, Clean, Edge-to-Edge) ====== -->
+  <!-- ====== Footer ====== -->
   <footer class="bg-light text-muted mt-5 w-100">
 
     <!-- Social Media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom w-100 px-5">
-
       <div>
         <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
@@ -203,18 +223,12 @@
     <!-- Footer Links -->
     <section class="w-100 px-5 py-5">
       <div class="row justify-content-center text-center text-md-start">
-        <!-- Company -->
         <div class="col-12 col-md-3 col-lg-4 col-xl-3 mb-4">
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company Name
+            <i class="fas fa-gem me-3"></i>ALZA HMZA
           </h6>
-          <p>
-            A short and stylish description about your brand or store. Perfect place to tell visitors what makes you
-            unique.
-          </p>
+          <p>A short and stylish description about your brand or store. Perfect place to tell visitors what makes you unique.</p>
         </div>
-
-        <!-- Products -->
         <div class="col-6 col-md-2 col-lg-2 col-xl-2 mb-4">
           <h6 class="text-uppercase fw-bold mb-4">Products</h6>
           <p><a href="#" class="text-reset">Women</a></p>
@@ -222,8 +236,6 @@
           <p><a href="#" class="text-reset">Kids</a></p>
           <p><a href="#" class="text-reset">Accessories</a></p>
         </div>
-
-        <!-- Useful Links -->
         <div class="col-6 col-md-3 col-lg-2 col-xl-2 mb-4">
           <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
           <p><a href="#" class="text-reset">About Us</a></p>
@@ -231,8 +243,6 @@
           <p><a href="#" class="text-reset">Help</a></p>
           <p><a href="#" class="text-reset">Contact</a></p>
         </div>
-
-        <!-- Contact -->
         <div class="col-12 col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
           <p><i class="fas fa-home me-3"></i> Karachi, Pakistan</p>
@@ -244,20 +254,18 @@
 
     <!-- Copyright -->
     <div class="text-center p-4 w-100" style="background-color: rgba(0,0,0,0.05);">
-      © <span id="year"></span> Your Brand — All Rights Reserved
+      © <span id="year"></span> ALZA HMZA — All Rights Reserved
     </div>
   </footer>
 
+  <!-- JS -->
   <script>
-    // Auto-update current year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <!-- ====== End Footer ====== -->
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

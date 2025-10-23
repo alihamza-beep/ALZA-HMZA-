@@ -42,7 +42,7 @@
 
     <!-- Icons -->
     <div class="d-flex align-items-center me-3">
-      <a href="./src/pages/signin/login.html" class="text-dark me-3 fs-5"><i class="bi bi-person"></i></a>
+      <a href="./../signin/login.html" class="text-dark me-3 fs-5"><i class="bi bi-person"></i></a>
       <a href="#" class="text-dark fs-5 position-relative">
         <i class="bi bi-bag"></i>
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
@@ -74,7 +74,7 @@
         <a class="nav-link text-dark" href="#">Rozmara Winter Vol. I</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link text-dark" href="./src/pages/about/about.html">About</a>
+        <a class="nav-link text-dark" href="./about.html">About</a>
       </li>
       <li class="nav-item mx-3">
         <a class="nav-link text-dark" href="#">Luxury Pret</a>
@@ -86,7 +86,7 @@
         <a class="nav-link text-dark" href="#">Kids</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link text-dark" href="./src/pages/contact/contact.html">Contacts</a>
+        <a class="nav-link text-dark" href="./../contact/contact.html">Contacts</a>
       </li>
     </ul>
 
@@ -110,60 +110,132 @@
 <!-- TailwindCSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- ABOUT PAGE -->
-<!-- 🌸 Brand Intro Section -->
-<section class="max-w-6xl mx-auto px-6 py-16 bg-white text-gray-800">
-  <!-- Brand Name -->
-  <h1 class="text-4xl md:text-5xl font-bold tracking-wide mb-4">ALZA&nbsp;HMZA</h1>
+<!-- 🌸 ABOUT PAGE TEMPLATE for ALZA HMZA (Updated with Traditional Clothing Images) -->
+<section class="bg-white text-gray-800">
 
-  <!-- Brand Intro -->
-  <p class="text-lg leading-relaxed mb-10 text-gray-600">
-    Alza Hamza, a clothing line inspired by the fast-paced and stylish life of the modern urban woman, 
-    seeks inspiration from art, culture, and timeless elegance — blending tradition with contemporary design to celebrate every woman’s individuality.
-  </p>
+  <!-- 1️⃣ HERO SECTION -->
+  <!-- 1️⃣ HERO SECTION with VIDEO -->
+<div class="relative h-[80vh]">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+    <source src="../../../assets/videos/video 3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <!-- 🩶 Subsections -->
-  <div class="space-y-8">
-
-    <!-- Section 1 -->
-    <div>
-      <h2 class="font-semibold text-xl mb-2">The Alza Hamza Woman:</h2>
-      <p class="text-gray-600 leading-relaxed">
-        The Alza Hamza woman is confident, graceful, and full of life. She has an eye for art, poetry, nature, 
-        and all things beautiful. Regardless of ethnicity, color, size, or age, she believes in looking elegant and 
-        feeling empowered every single day — from simple college mornings to evening soirées.
-      </p>
-    </div>
-
-    <!-- Section 2 -->
-    <div>
-      <h2 class="font-semibold text-xl mb-2">The Collections:</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Drawing inspiration from diverse crafts and cultures, Alza Hamza brings together intricate embroideries, 
-        digital prints, and luxurious fabrics to create classic yet modern pieces. Our prêt collection features 
-        elegant kurtas, jumpsuits, jackets, and trousers — designed to be mixed, matched, and styled your way.
-      </p>
-    </div>
-
-    <!-- Section 3 -->
-    <div>
-      <h2 class="font-semibold text-xl mb-2">Silhouettes:</h2>
-      <p class="text-gray-600 leading-relaxed">
-        At Alza Hamza, we focus on flattering natural body shapes with effortless silhouettes — clean cuts, 
-        graceful drapes, and refined tailoring that speak sophistication without fuss.
-      </p>
-    </div>
-
-    <!-- Section 4 -->
-    <div>
-      <h2 class="font-semibold text-xl mb-2">Color Palette:</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Our palette embraces earthy neutrals, soft pastels, and deep jewel tones that reflect class and emotion. 
-        From subtle elegance to bold vibrance — every shade in Alza Hamza’s collection tells a story of confidence, 
-        creativity, and timeless beauty.
+  <!-- Overlay + Text -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="text-center text-white px-6">
+      <h1 class="text-5xl font-bold tracking-wide mb-4">About <span class="text-pink-400">ALZA HMZA</span></h1>
+      <p class="text-lg max-w-2xl mx-auto leading-relaxed">
+        Where elegance meets tradition — redefining fashion for the confident, creative woman of today.
       </p>
     </div>
   </div>
+</div>
+
+  <!-- 2️⃣ BRAND STORY -->
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center">Our Story</h2>
+    <p class="text-gray-600 leading-relaxed text-lg text-center max-w-3xl mx-auto">
+      Founded in 2018, <b>ALZA HMZA</b> was born from a dream — to create a brand that celebrates individuality through fashion. 
+      Inspired by culture, art, and timeless design, we aim to empower women to express confidence in every silhouette. 
+      Our collections combine contemporary trends with graceful detailing, blending tradition and innovation beautifully.
+    </p>
+  </div>
+
+  <!-- 3️⃣ PROFESSIONAL TIMELINE (Our Journey) -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+        Our Journey Through Time
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 relative">
+
+        <!-- Vertical Line -->
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-200"></div>
+
+        <!-- Timeline Items -->
+        <div class="flex md:justify-end md:pr-12 relative z-10">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-pink-500 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">2018 — The Beginning</h3>
+            <p class="text-gray-600 leading-relaxed">ALZA HMZA started as a passion project with a mission to blend grace and simplicity.</p>
+          </div>
+        </div>
+
+        <div class="flex md:justify-start md:pl-12 relative z-10">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-purple-500 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">2019 — First Collection</h3>
+            <p class="text-gray-600 leading-relaxed">Launched our first prêt collection — embracing minimalism with elegance.</p>
+          </div>
+        </div>
+
+        <div class="flex md:justify-end md:pr-12 relative z-10">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-rose-400 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">2021 — Growing Beyond</h3>
+            <p class="text-gray-600 leading-relaxed">Expanded across cities and collaborated with local artisans to craft timeless pieces.</p>
+          </div>
+        </div>
+
+        <div class="flex md:justify-start md:pl-12 relative z-10">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">2024 — Digital Expansion</h3>
+            <p class="text-gray-600 leading-relaxed">Launched our online store, bringing luxury fashion to women worldwide.</p>
+          </div>
+        </div>
+
+        <div class="flex md:justify-end md:pr-12 relative z-10">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-indigo-500 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">2025 — The Future Ahead</h3>
+            <p class="text-gray-600 leading-relaxed">Continuing our journey — celebrating women, culture, and creativity through timeless fashion.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4️⃣ CORE VALUES -->
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div class="p-8 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-pink-500">Elegance</h3>
+        <p class="text-gray-600 leading-relaxed">Every design reflects timeless sophistication that empowers every woman.</p>
+      </div>
+      <div class="p-8 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-pink-500">Creativity</h3>
+        <p class="text-gray-600 leading-relaxed">Inspired by art and culture, we bring originality to every collection.</p>
+      </div>
+      <div class="p-8 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3 text-pink-500">Empowerment</h3>
+        <p class="text-gray-600 leading-relaxed">Fashion that helps women embrace confidence and celebrate individuality.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5️⃣ FOUNDER SECTION (Traditional Clothing Image) -->
+  <div class="bg-pink-50 py-16">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+      <!-- Image -->
+      <div>
+        <img src="./../../../assets/imgs/image.png" 
+             alt="Founder in traditional attire" 
+             class="rounded-2xl shadow-lg">
+      </div>
+      <!-- Text -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Message from Our Founder</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          “At ALZA HMZA, our goal is simple — to make every woman feel confident, beautiful, and comfortable in her own skin. 
+          We believe fashion is more than clothing; it’s self-expression, strength, and joy.”
+        </p>
+        <h3 class="text-xl font-semibold text-pink-500">— Aleeza Hamza</h3>
+        <p class="text-gray-500 text-sm">Founder & Creative Director</p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- Footer -->
